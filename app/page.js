@@ -368,6 +368,7 @@ export default function Home() {
           <div className='p-3 w-1/5'>Money</div>
           <div className='p-3 w-1/5'>Money Minus Payments</div>
           <div className='p-3 w-1/5'>Payment/Month</div>
+          <div className='p-3 w-1/5'>Total Paid</div>
           <div className='p-3 w-1/5'>Extra Payment</div>
         </div>
    {Array.from(Array(parseInt(term*12)).keys()).map(function(i) {

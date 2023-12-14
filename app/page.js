@@ -361,27 +361,27 @@ export default function Home() {
 
    <div className='mx-5  p-5 mb-10 bg-white rounded-xl bg-opacity-10'>
    <div className='text-slate-300 text-sm items-center rounded-lg mb-2 w-full flex bg-white bg-opacity-10'>
-          <div className='p-3 w-1/5'>Month</div>
-          <div className='p-3 w-1/5'>Remaining Mortgage</div>
-          <div className='p-3 w-1/5'>Interest</div>
-          <div className='p-3 w-1/5'>Principle</div>
-          <div className='p-3 w-1/5'>Money</div>
-          <div className='p-3 w-1/5'>Money Minus Payments</div>
-          <div className='p-3 w-1/5'>Mortgage Costs</div>
-          <div className='p-3 w-1/5'>Base Payment</div>
+          <div className='p-3 w-1/8'>Month</div>
+          <div className='p-3 w-1/8'>Remaining Mortgage</div>
+          <div className='p-3 w-1/8'>Interest</div>
+          <div className='p-3 w-1/8'>Principle</div>
+          <div className='p-3 w-1/8'>Money</div>
+          <div className='p-3 w-1/8'>Money Minus Payments</div>
+          <div className='p-3 w-1/8'>Mortgage Costs</div>
+          <div className='p-3 w-1/8'>Base Payment</div>
         </div>
    {Array.from(Array(parseInt(term*12)).keys()).map(function(i) {
       return (
         <div key={i+"sdscd"} className='text-slate-300 border-b-2 border-white border-opacity-10 items-center text-sm w-full flex bg-white bg-opacity-5'>
-          <div className='p-2 w-1/5'>{i}</div>
-          <div className='p-2 w-1/5'>{Math.round(remainingArrState[i+3] * 100) / 100}</div>
-          <div className='p-2 w-1/5'>{Math.round(intArrState[i+3] * 100) / 100}</div>
-          <div className='p-2 w-1/5'>{Math.round(princArrState[i+3] * 100) / 100}</div>
-          <div className='p-2 w-1/5'>{Math.round(monrrState[i+3] * 100) / 100 + savings}</div>
-          <div className='p-2 w-1/5'>{Math.round(monsubarrState[i+3] * 100) / 100 + savings}</div>
-          <div className='p-2 w-1/5'>{Math.round(pmtArrState[i+3] * 100) / 100}</div>
-          <div className='p-2 w-1/5'>{Math.round(pmtState * 100) / 100}</div>
-          <div className='p-2 w-1/5'>{extraMon}</div>
+          <div className='p-2 w-1/8'>{i}</div>
+          <div className='p-2 w-1/8'>{Math.round(remainingArrState[i+3] * 100) / 100}</div>
+          <div className='p-2 w-1/8'>{Math.round(intArrState[i+3] * 100) / 100}</div>
+          <div className='p-2 w-1/8'>{Math.round(princArrState[i+3] * 100) / 100}</div>
+          <div className='p-2 w-1/8'>{Math.round(monrrState[i+3] * 100) / 100 + savings}</div>
+          <div className='p-2 w-1/8'>{Math.round(monsubarrState[i+3] * 100) / 100 + savings}</div>
+          <div className='p-2 w-1/8'>{Math.round(pmtArrState[i+3] * 100) / 100}</div>
+          <div className='p-2 w-1/8'>{Math.round(pmtState * 100) / 100}</div>
+          <div className='p-2 w-1/8'>{extraMon}</div>
         </div>
       )
     })}

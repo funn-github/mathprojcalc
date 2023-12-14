@@ -1,4 +1,4 @@
-"use client"; // This is a client component 👈🏽
+tra"use client"; // This is a client component 👈🏽
 
 import Image from 'next/image'
 import { useState, Component, useEffect } from 'react'
@@ -367,8 +367,8 @@ export default function Home() {
           <div className='p-3 w-1/8'>Principle</div>
           <div className='p-3 w-1/8'>Money</div>
           <div className='p-3 w-1/8'>Money Minus Payments</div>
-          <div className='p-3 w-1/8'>Mortgage Costs</div>
-          <div className='p-3 w-1/8'>Base Payment</div>
+          <div className='p-3 w-1/8'>Payment/Month</div>
+          <div className='p-3 w-1/8'>Extra Payment</div>
         </div>
    {Array.from(Array(parseInt(term*12)).keys()).map(function(i) {
       return (

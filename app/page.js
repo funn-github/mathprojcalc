@@ -372,7 +372,7 @@ export default function Home() {
         </div>
    {Array.from(Array(parseInt(term*12)).keys()).map(function(i) {
       return (
-        <div className='text-slate-300 border-b-2 border-white border-opacity-10 items-center text-sm w-full flex bg-white bg-opacity-5'>
+        <div key={i+"sdscd"} className='text-slate-300 border-b-2 border-white border-opacity-10 items-center text-sm w-full flex bg-white bg-opacity-5'>
           <div className='p-2 w-1/5'>{i}</div>
           <div className='p-2 w-1/5'>{Math.round(remainingArrState[i+3] * 100) / 100}</div>
           <div className='p-2 w-1/5'>{Math.round(intArrState[i+3] * 100) / 100}</div>

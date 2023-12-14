@@ -1,4 +1,4 @@
-tra"use client"; // This is a client component 👈🏽
+"use client"; // This is a client component 👈🏽
 
 import Image from 'next/image'
 import { useState, Component, useEffect } from 'react'
